@@ -45,5 +45,4 @@ public class Calcul2 {
         return a*b/100;
     }
 
-
 }
