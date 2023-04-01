@@ -20,6 +20,7 @@ public class Cat extends Animal {
     public void setColor(String color) {
         this.color = color;
     }
+
 }
 
 
