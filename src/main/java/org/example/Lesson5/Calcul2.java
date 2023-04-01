@@ -1,3 +1,5 @@
+package org.example.Lesson5;
+
 import java.util.Scanner;
 
 public class Calcul2 {
@@ -16,17 +18,17 @@ public class Calcul2 {
         System.out.println("Enter symbol of operation");
         char symbol=scanner.next().charAt(0);
         int result =0;
-        System.out.println("sum is:"+sum(number, number2));
+        System.out.println("sum is:"+sum(number, number2)); 
         System.out.println("subtr is:"+subtr (number, number2));
         System.out.println("divide is:" +divide(number, number2));
         System.out.println("multiply is:" +multiply(number, number2) );
         System.out.println("perc is:" +perc(number, number2));
         return;
+
     }
 
     public static int sum(int a, int b){
         return a+b;
-
     };
 
     public static int subtr(int a, int b){
