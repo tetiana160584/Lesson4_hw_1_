@@ -37,7 +37,6 @@ public class Animal {
     public void setVegetarian(boolean vegetarian) {
         this.vegetarian = vegetarian;
     }
-
 }
 
 
