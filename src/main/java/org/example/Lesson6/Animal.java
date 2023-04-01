@@ -12,9 +12,6 @@ public class Animal {
     }
 
     public Animal() {
-        this.eats="apples";
-        this.legs=4;
-        this.vegetarian=true;
     }
 
     public String getEats() {
