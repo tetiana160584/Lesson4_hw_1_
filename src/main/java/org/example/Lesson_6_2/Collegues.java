@@ -1,7 +1,9 @@
 package org.example.Lesson_6_2;
 
+import java.util.Arrays;
+
 public  class Collegues {
-    public class JavaDeveloper extends Employee {
+    public static class JavaDeveloper extends Employee {
         public JavaDeveloper(String name) {
             super("Tom");
         }
@@ -16,9 +18,9 @@ public  class Collegues {
             return "Senior";
         }
 
-        }
+    }
 
-        public class AngularDeveloper extends Employee {
+        public static class AngularDeveloper extends Employee {
 
             public AngularDeveloper(String name) {
                 super("Bill");
@@ -35,7 +37,7 @@ public  class Collegues {
             }
         }
 
-        public class AutomationEngineer extends Employee {
+        public static class AutomationEngineer extends Employee {
             public final String LastName;
 
             public AutomationEngineer(String name, String LastName) {
@@ -62,7 +64,7 @@ public  class Collegues {
             }
         }
 
-       public class ManualTestEngineer extends Employee {
+       public static class ManualTestEngineer extends Employee {
            public final String LastName;
 
            public ManualTestEngineer(String name, String LastName) {
@@ -87,18 +89,18 @@ public  class Collegues {
 
        }
 
-           public class Manager extends Employee{
+           public static class Manager extends Employee{
 
                private final String LastName;
 
                public Manager(String name, String LastName){
-                   super("William");
+                   super(name);
                    this.LastName=LastName;
 
                }
                @Override
                public String getPosition() {
-                   return "Manager";
+                   return "Manager"+"and has a team of " + team.length+ " members : " + Arrays.toString(team);
                }
 
                @Override
@@ -108,12 +110,13 @@ public  class Collegues {
 
                @Override
                public String getLastName() {
-                   return ("Underwood");
+                   return (LastName);
                }
 
                @Override
                public String getInfo() {
-                   return super.getInfo();
+                   return getName();
+
                }
 
                Employee[]team;
@@ -122,8 +125,8 @@ public  class Collegues {
                    this.team = team;
                }
 
-               public void setTeamMembers(Employee...members){
-                   team = members;
+               public void setTeamMembers(Employee...employees){
+                   team = employees;
 
                }
            }

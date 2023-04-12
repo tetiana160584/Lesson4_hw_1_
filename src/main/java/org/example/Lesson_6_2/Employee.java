@@ -10,6 +10,7 @@ public abstract class Employee {
     public String getName() {
         return name;
     }
+
     public String LastName;
 
     public String getLastName() {
@@ -17,10 +18,17 @@ public abstract class Employee {
     }
 
     public abstract String getPosition();
+
     public abstract String getSeniority();
-    public String getInfo(){
-        return name+"is a "+ getSeniority()+" "+getPosition();
+
+    public String getInfo() {
+
+       return getName();
+
+}
+
+    @Override
+    public String toString() {
+        return getName();
     }
-
-
 }
